@@ -1,20 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Economy Food Assistance</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="styles/style.css">
-  <title>Contact Us</title>
-</head>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
 
-<body>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            energyOrange: '#D97A2B',
+            growthGreen: '#6D9E51',
+            welcomeYellow: '#FFD150',
+            textBrown: '#4B2E2B',
+          },
+          fontFamily: {
+            sans: ['Raleway', 'sans-serif'],
+            heading: ['Montserrat', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-textBrown font-sans">
+
+  <section class="bg-growthGreen text-white py-16 text-center">
+    <h1 class="font-heading text-5xl font-bold mb-4 uppercase tracking-tight">Contact Us</h1>
+    <p class="text-xl opacity-90">We are here to support you with food and financial assistance.</p>
+  </section>
+
+  <section class="max-w-6xl mx-auto py-12 px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-energyOrange text-center">
+      <div class="mb-4 text-energyOrange font-bold text-lg uppercase tracking-wide">Call Us</div>
+      <p class="text-lg font-semibold">+254 724 508 587</p>
+      <p class="text-lg font-semibold">+254 799 323 594</p>
+    </div>
+
+    <div class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-welcomeYellow text-center">
+      <div class="mb-4 text-energyOrange font-bold text-lg uppercase tracking-wide">Email</div>
+      <p class="text-lg font-semibold">support@economyfood.org</p>
+      <p class="text-lg font-semibold">food@support.org</p>
+    </div>
+
+    <div class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-growthGreen text-center">
+      <div class="mb-4 text-energyOrange font-bold text-lg uppercase tracking-wide">Location</div>
+      <p class="text-lg font-semibold">West Pokot</p>
+      <p class="text-lg font-semibold">Turkana</p>
+    </div>
+  </section>
+
+  <section class="max-w-2xl mx-auto px-6 pb-20">
+    <div class="bg-white p-8 md:p-12 rounded-3xl shadow-xl border border-gray-100">
+      <h2 class="font-heading text-3xl font-bold mb-8 text-center">Send a Message</h2>
+      
+      <form class="space-y-6">
+        <div>
+          <label class="block text-sm font-bold mb-2 uppercase tracking-wider text-gray-500">Full Name</label>
+          <input 
+            type="text" 
+            placeholder="Your Name" 
+            class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-growthGreen transition-all" 
+            required>
+        </div>
+
+        <div>
+          <label class="block text-sm font-bold mb-2 uppercase tracking-wider text-gray-500">Email Address</label>
+          <input 
+            type="email" 
+            placeholder="email@example.com" 
+            class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-growthGreen transition-all" 
+            required>
+        </div>
+
+        <div>
+          <label class="block text-sm font-bold mb-2 uppercase tracking-wider text-gray-500">Message</label>
+          <textarea 
+            rows="4"
+            placeholder="How can we help you?" 
+            class="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-growthGreen transition-all" 
+            required></textarea>
+        </div>
+
+        <button 
+          type="submit" 
+          class="w-full bg-energyOrange text-white font-bold py-4 rounded-xl hover:bg-opacity-90 transform hover:-translate-y-1 transition-all shadow-lg shadow-orange-200">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-textBrown text-welcomeYellow text-center py-10">
+    <p class="font-bold">&copy; 2026 Economy and Food Assistance.</p>
+    <p class="text-sm opacity-70 mt-2 italic">Empowering communities through reliability and growth.</p>
+  </footer>
 
 </body>
-
 </html>
+  
