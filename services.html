@@ -1,55 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="styles/style.css">
-  <title>Our services |food assistance and economics</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Food Assistance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-slate-50 font-sans">
 
-<nav class="navbar">
-        <div class="logo">EcoFood <span>Initiative</span></div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html" class="active">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
+    <nav class="flex flex-col md:flex-row justify-between items-center px-8 py-4 bg-slate-900 text-white">
+        <div class="text-xl font-bold tracking-tight">EcoFood <span class="text-emerald-400">Initiative</span></div>
+        <ul class="flex space-x-6 mt-4 md:mt-0">
+            <li><a href="index.html" class="hover:text-emerald-400 transition">Home</a></li>
+            <li><a href="about.html" class="hover:text-emerald-400 transition">About</a></li>
+            <li><a href="services.html" class="text-emerald-400 font-semibold">Services</a></li>
+            <li><a href="contact.html" class="hover:text-emerald-400 transition">Contact</a></li>
         </ul>
     </nav>
 
-    <header class="services-hero">
-        <h1>Economic & Food Assistance Programs</h1>
-        <p>Providing sustainable solutions through financial empowerment and nutritional support.</p>
+    <header class="py-16 px-4 text-center bg-[#6D9E51] text-white">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Our Core Programs</h1>
+        <p class="text-lg md:text-xl max-w-2xl mx-auto opacity-90">Combining economic strategy with direct food assistance to build sustainable community resilience.</p>
     </header>
 
-    <section class="services-grid">
-        <div class="service-card">
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-slate-100">
+                <img src="https://www.wfp.org/sites/default/files/publication_covers/f4d010a3a45bce488489aabf20329d1f.png" alt="Cash-based transfer" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-emerald-600 text-xs font-bold uppercase tracking-widest">Economics</span>
+                    <h3 class="text-xl font-bold text-slate-800 mt-2">Cash-Based Transfers</h3>
+                    <p class="text-slate-600 mt-3 text-sm leading-relaxed">
+                        Stimulating local markets by providing electronic vouchers and direct cash, giving families agency over their nutritional needs.
+                    </p>
+                </div>
+            </div>
 
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-slate-100">
+                <img src="https://domf5oio6qrcr.cloudfront.net/medialibrary/17915/bigstock-health-food-selection-super-foods-fruits-veggies.jpg" alt="Nutrition support" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-emerald-600 text-xs font-bold uppercase tracking-widest">Health</span>
+                    <h3 class="text-xl font-bold text-slate-800 mt-2">Nutritional Support</h3>
+                    <p class="text-slate-600 mt-3 text-sm leading-relaxed">
+                        Distributing fortified food baskets and bio-fortified crops specifically designed to combat malnutrition in children.
+                    </p>
+                </div>
+            </div>
 
-            <img src="https://www.wfp.org/sites/default/files/publication_covers/f4d010a3a45bce488489aabf20329d1f.png" alt="Person receiving digital cash transfer">
-            <h3>Cash-Based Transfers</h3>
-            <p>Empowering local economies by providing direct financial assistance, allowing families to choose their own food and essential needs.</p>
-        </div>
+            <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-slate-100">
+                <img src="https://www.ituc-africa.org/IMG/logo/socialprotect2.jpg" alt="Social safety nets" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-emerald-600 text-xs font-bold uppercase tracking-widest">Policy</span>
+                    <h3 class="text-xl font-bold text-slate-800 mt-2">Social Protection</h3>
+                    <p class="text-slate-600 mt-3 text-sm leading-relaxed">
+                        Strengthening national safety nets and insurance schemes to shield vulnerable households from economic shocks and crop failure.
+                    </p>
+                </div>
+            </div>
 
-        
-        <div class="service-card">
-            <img src="https://5.imimg.com/data5/SELLER/Default/2024/1/378496634/WR/TY/JE/6462321/nutritional-supplements-products.jpg" alt="Nutritious food basket and health monitoring">
-            <h3>Nutritional Support</h3>
-            <p>Targeted programs providing specialized nutrients for children and mothers to prevent stunting and improve long-term health outcomes.</p>
-        </div>
-
-        <div class="service-card">
-            <img src="https://static.vecteezy.com/system/resources/thumbnails/072/503/346/small/hands-protecting-paper-family-silhouette-under-warm-sunlight-concept-of-protection-security-and-family-well-being-photo.jpg" alt="Community meeting for social safety nets">
-            <h3>Social Protection</h3>
-            <p>Building resilient safety nets through policy advocacy and economic insurance to protect vulnerable populations from market shocks.</p>
         </div>
     </section>
 
-  
 </body>
 </html>
