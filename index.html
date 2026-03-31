@@ -9,44 +9,42 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Home</title>
   </head>
 
-  <body class="font-montserrat">
-    <header class="bg-[#6d9e51] text-white p-7 shadow-md sticky top-0 z-50">
-      <nav class="flex flex-row flex-nowrap justify-between items-center container mx-auto">
-        <div>
-          <h1 class="text-3xl font-bold">FeedAChild</h1>
+  <body class="font-montserrat m-0 p-0">
+    <header class="bg-[#6d9e51] text-white p-5 shadow-md sticky top-0 z-50">
+      <nav class="flex flex-row  flex-nowrap justify-between items-center container mx-auto">
+        <div class="flex flex-row flex-start items-center gap-2 basis-1/5">
+          <h1 class="text-3xl font-bold cursor-pointer" href="index.html">FeedAChild</h1>
         </div>
-        <ul class="flex flex-row space-x-4">
-          <li class="no-underline hover:font-bold border-white hover:translate-x-0.5 hover:text-lg p-2 duration-300"><a href="index.html">Home</a></li>
-          <li class="no-underline hover:font-bold border-white hover:translate-x-0.5 hover:text-lg p-2 duration-300"><a href="about.html">About Us</a></li>
-          <li class="no-underline hover:font-bold border-white hover:translate-x-0.5 hover:text-lg p-2 duration-300"><a href="services.html">Services</a></li>
-          <li class="no-underline hover:font-bold border-white hover:translate-x-0.5 hover:text-lg p-2 duration-300"><a href="contact.html">Contact Us</a></li>
+        <ul class="flex flex-row flex-nowrap justify-center items-center flex-end">
+          <li class="no-underline hover:font-bold border-white hover:translate-x-0.5 p-4 duration-300 grow-0"><a href="index.html">Home</a></li>
+          <li class="no-underline hover:font-bold border-white hover:translate-x-0.5 p-4 duration-300 grow-0"><a href="about.html">About Us</a></li>
+          <li class="no-underline hover:font-bold border-white hover:translate-x-0.5 p-4 duration-300 grow-0"><a href="services.html">Services</a></li>
+          <li class="no-underline hover:font-bold border-white hover:translate-x-0.5 p-4 duration-300 grow-0"><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="p-5 bg-[#d97a2b] text-white">
-        <h2 class="text-3xl font-bold m-2 p-5 text-center">Welcome to FeedAChild</h2>
-        <h3 class="text-xl font-bold m-2">Our Mission</h3>
-        <p class="mb-4 text-justify indent-8 w-1/2">
-          To end child hunger across the world by joining hands as one
-          community. We bring life-saving relief in emergencies and use food
-          assistance to build a pathway to peace, stability and prosperity for
-          people recovering from conflict, disasters and the impacts of climate
-          change.
+      <section class="p-5 bg-[url('images/hero.jpeg')] bg-cover bg-center text-white justify-center items-center">
+        <h2 class="text-4xl font-bold mt-10 p-5 text-center">Welcome to FeedAChild</h2>
+        <h3 class="text-3xl font-bold mt-10 indent-10">Our Mission</h3>
+        <p class="mb-8 mt-10 text-lg text-justify indent-8 w-1/2 bg-[#a0a0a0] bg-opacity-40 p-4 rounded">
+          To end child hunger across the world by joining hands as one community. We bring life-saving relief in emergencies and use food assistance to build a pathway to peace, stability and prosperity for people recovering from conflict, disasters and the impacts of climate change.
+        </p>
+        <h3 class="text-3xl font-bold mt-10 indent-10">Our Vision</h3>
+        <p class="mb-8 mt-10 text-lg text-justify indent-8 w-1/2 bg-[#a0a0a0] bg-opacity-40 p-4 rounded">
+          A world where every child has access to nutritious food and the opportunity to thrive. 
         </p>
       </section>
-      <section class="p-5">
-        <h2 class="text-3xl font-bold m-2 p-5 text-center">Join Us in Making a Difference</h2>
-        <p class="mb-4 text-justify indent-8 w-1/2">
-          Your support can help us provide meals to children in need. Together,
-          we can create a world where no child goes to bed hungry.
+      <section class="p-5 pb-10 flex flex-col items-center">
+        <h2 class="text-3xl font-bold mt-8 mb-8 p-5 text-center">Join Us in Making a Difference</h2>
+        <p class="mb-4 text-justify text-center w-[70%] mx-auto">
+          Your support can help us provide meals to children in need. Together, we can create a world where no child goes to bed hungry.
         </p>
-        <button class="bg-[#FFD150] justify-center items-center text-black px-4 py-2 rounded hover:bg-[#e6b800]">Get Involved</button>
+        <button class="bg-[#FFD150] justify-center items-center text-black px-4 py-2 mt-4 rounded duration-300 hover:bg-[#ffc832] hover:scale-105">Get Involved</button>
       </section>
       <section class="pl-5 pr-5 pt-5 pb-10 bg-[#6d9e51] text-white">
         <h2 class="text-3xl font-bold m-2 p-5 text-center">Our Impact</h2>
@@ -63,25 +61,45 @@
             <h3 class="font-bold text-3xl">100%</h3>
             <p class="mt-2">Donor Support</p>
           </div>
+          <div class="flex flex-col items-center bg-[#fffff0] text-black p-4 rounded">
+            <h3 class="font-bold text-3xl">10 Years</h3>
+            <p class="mt-2">Of Help & Service</p>
+          </div>
         </div>
       </section>
-      <section class="p-5 bg-[#d97a2b] text-white">
-        <h2 class="text-3xl font-bold m-2 p-5 text-center">Volunteer With Us</h2>
-        <p class="mb-4 text-justify indent-8 w-1/2">
+      <section class="p-5 bg-[#d97a2b] text-white bg-[url('images/volunteer.jpg')] bg-cover bg-center">
+        <h2 class="text-4xl font-bold m-2 p-5 text-center">Volunteer With Us</h2>
+        <p class="mb-4 text-xl text-justify indent-8 w-1/2 bg-[#a0a0a0] bg-opacity-40 p-4 rounded">
           Join our team of volunteers and help us make a difference in the lives
           of children around the world. Whether you want to help with
           fundraising, advocacy, or on-the-ground support, there are many ways
           to get involved.
         </p>
-        <button class="bg-[#FFD150] justify-center items-center text-black px-4 py-2 mx-auto rounded hover:bg-[#e6b800]">Become a Volunteer</button>
-        <h2 class="text-3xl font-bold m-2 p-5 text-center">Donate Now</h2>
-        <p class="mb-4">
+        <button class="bg-[#FFD150] justify-center items-center text-black px-4 py-2 ml-[23%] mt-4 rounded duration-300 hover:bg-[#ffda75] hover:scale-105">Become a Volunteer</button>
+        <h2 class="text-4xl font-bold m-2 p-5 text-center">Donate Now</h2>
+        <p class="mb-4 text-xl text-justify indent-8 w-1/2 bg-[#a0a0a0] bg-opacity-40 p-4 rounded">
           Your donation can provide meals, support education, and help us reach
           more children in need. Every contribution, big or small, makes a
           difference.
         </p>
-        <button class="bg-[#FFD150] justify-center items-center text-black px-4 py-2 rounded hover:bg-[#e6b800]">Donate Now</button>
+        <button class="bg-[#FFD150] justify-center items-center text-black px-4 py-2 ml-[25%] mt-4 mb-4 rounded duration-300 hover:bg-[#ffda75] hover:scale-105">Donate Now</button>
       </section>
     </main>
   </body>
+  <footer class="bg-[#4B2E2B] text-white p-5 text-center flex flex-row items-center">
+    <div class="flex flex-col items-center gap-4 w-1/3">
+      <h1 class="text-3xl font-bold">FeedAChild</h1>
+      <p class="text-sm">123 Charity Lane, Nairobi, Kenya</p>
+      <p class="text-sm">Email: info@feedachild.org</p>
+      <p class="text-xs">&copy; 2024 FeedAChild. All rights reserved.</p>
+    </div>
+    <div class="flex flex-col gap-4 ml-auto w-1/3">
+      <h1 class="text-2xl font-bold">Reach Us</h1>
+      <div class="flex flex-row gap-4 justify-center">
+        <img src="icons/facebook-icon.svg" alt="Facebook Icon" class="w-6 h-6 mx-auto" href="#">
+        <img src="icons/whatsapp-icon.svg" alt="WhatsApp Icon" class="w-6 h-6 mx-auto" href="#">
+        <img src="icons/instagram-icon.svg" alt="Instagram Icon" class="w-6 h-6 mx-auto" href="#">
+      </div>
+    </div>
+  </footer>
 </html>
